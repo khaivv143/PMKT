@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="VI">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DatavizUI Admin</title>
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="vendors/js-grid.css">
+    <link rel="stylesheet" href="vendors/jsgrid-theme.min.css">
+    <link rel="stylesheet" href="custom/style.css">
+</head>
+
+<body class="sidebar-dark">
+    <div class="container-scroller">
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo" href="#"><img src="images/logo.png" /></a>
+                <a class="navbar-brand brand-logo-mini" href="#"><img src="images/icon-logo.png" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+
+                <ul class="nav page-navigation">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="menu-title">HỆ THỐNG</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ngày hạch toán</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nhật ký truy cập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tùy chọn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mega-menu">
+                        <a href="#" class="nav-link">
+                            <span class="menu-title">DANH MỤC</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="submenu">
+                            <div class="col-group-wrapper row">
+                                <div class="col-group col-md-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p class="category-heading"><a href="#">Cơ cấu tổ chức</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-group col-md-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p class="category-heading">Tài khoản</p>
+                                            <div class="submenu-item">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <ul>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Hệ thống tài khoản</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Tài khoản kết chuyển</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Tài khoản ngầm định</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Định khoản tự động</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-group col-md-2 padding-left-0">
+                                    <p class="category-heading">Đối tượng</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="#">Khách hàng</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Nhà cung cấp</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Nhân viên</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Nhóm KH/NCC</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-5 padding-left-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p class="category-heading">Vật tư hàng hóa, CCDC, TSCD</p>
+                                            <div class="submenu-item">
+                                                <div class="row">
+                                                    <div class="col-md-5 padding-right-0">
+                                                        <ul>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Vật tư hàng hóa</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Kho</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Đơn vị tính</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Loại VTHH</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Công cụ dụng cụ</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-7 padding-right-0">
+                                                        <ul>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Tài sản cố định</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Loại TSCD</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Nhóm HHDV chịu thuế TTDB</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Biểu thuế tài nguyên</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">Định mức NVL</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <br>
+                                </div>
+                                <div class="col-group col-md-2">
+                                    <p class="category-heading">Ngân hàng</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="#">Ngân hàng</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Tài khoản ngân hàng</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Thẻ tín dụng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-3">
+                                    <p class="category-heading">Lương nhân viên</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="#">Ký hiệu chấm công</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Biểu thuế thu nhập cá nhân</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Quy định lương, thuế, bảo hiểm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-2 padding-left-0">
+                                    <p class="category-heading">Thống kê, chi phí</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="#">Đối tượng tập hợp chi phí</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Khoản mục chi phí</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Mã thống kê</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Mục thu - chi</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-group col-md-5 padding-left-0">
+                                    <p class="category-heading">Khác</p>
+                                    <ul class="submenu-item">
+                                        <li class="nav-item"><a class="nav-link" href="#">Loại tiền</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Điều khoản thanh toán</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Phương thức vận chuyển</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Nhóm giá bán</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Tình trạng hợp đồng</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="menu-title">TIỆN ÍCH</span>
+                            <i class="menu-arrow"></i></a>
+                        <div class="submenu">
+                            <ul class="submenu-item">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nhập số dư đầu kỳ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Đánh lại số chứng từ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tìm kiếm chứng từ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nhập dữ liệu từ File Excel</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-title">BÁO CÁO</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-title">TRỢ GIÚP</span>
+                        </a>
+                    </li>
+                    <li class="nav-item hotline-sp">
+                        <div class="main">
+                            <a href="#">0868.213.466</a>
+                            <a href="#">1900.56.56.53</a>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item phienlamviec">
+                        <a class="nav-link" href="#">PHIÊN LÀM VIỆC</a>
+                    </li>
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">ADMIN <span class="mdi mdi-chevron-down"></span></a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                            <a class="dropdown-item">
+                                <i class="mdi mdi-settings text-primary"></i>
+                                Settings
+                            </a>
+                            <a class="dropdown-item">
+                                <i class="mdi mdi-logout text-primary"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item hidden-dk">
+                        <a class="nav-link" data-toggle="collapse" href="#mb-menu1" aria-expanded="false" aria-controls="mb-menu1">
+                            <img src="images/s2.png">
+                            <span class="menu-title">HỆ THỐNG</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="mb-menu1">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Ngày hạch toán</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Nhật ký truy cập</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Tùy chọn</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item hidden-dk">
+                        <a class="nav-link" data-toggle="collapse" href="#mb-menu2" aria-expanded="false" aria-controls="mb-menu2">
+                            <img src="images/s2.png">
+                            <span class="menu-title">DANH MỤC</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="mb-menu2">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Cơ cấu tổ chức</a></li>
+                                <li class="nav-item sub2">
+                                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                                        <span class="menu-title">Tài khoản</span>
+                                        <i class="menu-arrow"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Hệ thống tài khoản</a></li>
+                                        <li><a href="#">Tài khoản kết chuyển</a></li>
+                                        <li><a href="#">Tài khoản ngầm định</a></li>
+                                        <li><a href="#">Định khoản tự động</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item sub2">
+                                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                                        <span class="menu-title">Đối tượng</span>
+                                        <i class="menu-arrow"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Khách hàng</a></li>
+                                        <li><a href="#">Nhà cung cấp</a></li>
+                                        <li><a href="#">Nhân viên</a></li>
+                                        <li><a href="#">Nhóm KH/NCC</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item sub2">
+                                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                                        <span class="menu-title">Vật tư hàng hóa, CCDC, TSCD</span>
+                                        <i class="menu-arrow"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Vật tư hàng hóa</a></li>
+                                        <li><a href="#">Kho</a></li>
+                                        <li><a href="#">Đơn vị tính</a></li>
+                                        <li><a href="#">Loại VTHH</a></li>
+                                        <li><a href="#">Công cụ dụng cụ</a></li>
+                                        <li><a href="#">Tài sản cố định</a></li>
+                                        <li><a href="#">Loại TSCD</a></li>
+                                        <li><a href="#">Nhóm HHDV chịu thuế TTDB</a></li>
+                                        <li><a href="#">Biểu thuế tài nguyên</a></li>
+                                        <li><a href="#">Định mức NVL</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item sub2">
+                                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                                        <span class="menu-title">Ngân hàng</span>
+                                        <i class="menu-arrow"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Ngân hàng</a></li>
+                                        <li><a href="#">Tài khoản ngân hàng</a></li>
+                                        <li><a href="#">Thẻ tín dụng</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item sub2">
+                                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                                        <span class="menu-title">Lương nhân viên</span>
+                                        <i class="menu-arrow"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Ký hiệu chấm công</a></li>
+                                        <li><a href="#">Biểu thuế thu nhập cá nhân</a></li>
+                                        <li><a href="#">Quy định lương, thuế, bảo hiểm</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item sub2">
+                                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                                        <span class="menu-title">Thống kê, chi phí</span>
+                                        <i class="menu-arrow"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Đối tượng tập hợp chi phí</a></li>
+                                        <li><a href="#">Khoản mục chi phí</a></li>
+                                        <li><a href="#">Mã thống kê</a></li>
+                                        <li><a href="#">Mục thu - chi</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item sub2">
+                                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                                        <span class="menu-title">Khác</span>
+                                        <i class="menu-arrow"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Loại tiền</a></li>
+                                        <li><a href="#">Điều khoản thanh toán</a></li>
+                                        <li><a href="#">Phương thức vận chuyển</a></li>
+                                        <li><a href="#">Nhóm giá bán</a></li>
+                                        <li><a href="#">Tình trạng hợp đồng</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item hidden-dk">
+                        <a class="nav-link" data-toggle="collapse" href="#mb-menu3" aria-expanded="false" aria-controls="mb-menu3">
+                            <img src="images/s2.png">
+                            <span class="menu-title">TIỆN ÍCH</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="mb-menu3">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Nhập số dư đầu kỳ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Đánh lại số chứng từ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Tìm kiếm chứng từ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Nhập dữ liệu từ File Excel</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item hidden-dk">
+                        <a class="nav-link" href="#">
+                            <img src="images/s2.png">
+                            <span class="menu-title">BÁO CÁO</span>
+                        </a>
+                    </li>
+                    <li class="nav-item hidden-dk">
+                        <a class="nav-link" href="#">
+                            <img src="images/s2.png">
+                            <span class="menu-title">TRỢ GIÚP</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m1" aria-expanded="false" aria-controls="ui-m1">
+                            <img src="images/s1.png">
+                            <span class="menu-title">TIỀN MẶT VÀ NGÂN HÀNG</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m1">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Phiếu thu</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Phiếu chi</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Báo nợ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Báo có</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Thẻ tín dụng</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Chuyển tiền nội bộ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Tiền đang chuyển</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Kiểm kê quỹ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Đối chiếu ngân hàng</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m2" aria-expanded="false" aria-controls="ui-m2">
+                            <img src="images/s2.png">
+                            <span class="menu-title">MUA HÀNG</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m2">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Đơn mua hàng</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Mua hàng qua kho</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Mua hàng không qua kho</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Nhận hóa đơn</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Mua dịch vụ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Hàng mua trả lại, giảm giá</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Trả tiền nhà cung cấp</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Đối trừ chứng từ</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m3" aria-expanded="false" aria-controls="ui-m3">
+                            <img src="images/s3.png">
+                            <span class="menu-title">BÁN HÀNG</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m3">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Báo giá</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Đơn đặt hàng</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Báo giá chưa thu tiền</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Bán hàng thu tiền ngay</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Xuất hóa đơn</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Hàng bán trả lại, giảm giá</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Thu tiền khách hàng</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Tính lãi nợ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Thông báo công nợ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Đối trừ chứng từ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Thiết lập chính sách giá</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Tính giá bán</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m4" aria-expanded="false" aria-controls="ui-m4">
+                            <img src="images/s4.png">
+                            <span class="menu-title">KHO</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m4">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Nhập kho</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Xuất kho</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Chuyển kho</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Lệnh lắp ráp, tháo dỡ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Kiểm kê kho</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Sắp xếp thứ tự nhập xuất</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Cập nhật giá nhập kho thành phẩm</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m5" aria-expanded="false" aria-controls="ui-m5">
+                            <img src="images/s5.png">
+                            <span class="menu-title">GIÁ THÀNH</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m5">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="#">Định mức nguyên vật liệu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Định mức giá thành phẩm</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Định mức phân bổ chi phí</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Chi phí dở dang đầu kỳ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Phương pháp giản đơn</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Phương pháp hệ số</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Phương pháp tỷ lệ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Giá thành theo công trình, vụ việc</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Giá thành theo đơn hàng</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Giá thành theo hợp đồng</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m6" aria-expanded="false" aria-controls="ui-m6">
+                            <img src="images/s6.png">
+                            <span class="menu-title">TỔNG HỢP</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m6">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="#">Chứng từ nghiệp vụ khác</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Kết chuyển lãi lỗ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Chứng từ ghi sổ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Chi phí trả trước</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Phân bổ chi phí trả trước</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Tính tỷ giá xuất quỹ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Đánh giá lại tài khoản ngoại tệ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Bù trừ công nợ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Khóa sổ kỳ kế toán</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Bỏ khóa sổ kỳ kế toán</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m7" aria-expanded="false" aria-controls="ui-m7">
+                            <img src="images/s7.png">
+                            <span class="menu-title">QUẢN LÝ HÓA ĐƠN</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m7">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Khởi tạo mẫu hóa đơn</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Đăng ký sử dụng hóa đơn</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Thông báo phát hành hóa đơn</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Hủy hóa đơn</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Mất, cháy, hỏng hóa đơn</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Xuất hóa đơn</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Điều chỉnh thông báo phát hành</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m8" aria-expanded="false" aria-controls="ui-m8">
+                            <img src="images/s7.png">
+                            <span class="menu-title">HÓA ĐƠN ĐIỆN TỬ</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m8">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Danh sách hóa đơn</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Hóa đơn thay thế</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Hóa đơn điều chỉnh</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Hóa đơn hủy</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Chuyển đổi hóa đơn</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Kết nối hóa đơn điện tử</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m9" aria-expanded="false" aria-controls="ui-m9">
+                            <img src="images/s9.png">
+                            <span class="menu-title">THUẾ</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m9">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Tờ khai thuế GTGT khấu trừ (01/GTGT)</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Tờ khai thuế GTGT cho dự án đầu tư (02/GTGT)</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Quyết toán TNDN năm (03/TNDN)</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Tờ khai thuế tài nguyên (01/TAIN)</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Tờ khai thuế tài nguyên (02/TAIN)</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Khấu trừ thuế GTGT</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Nộp thuế</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m10" aria-expanded="false" aria-controls="ui-m10">
+                            <img src="images/s10.png">
+                            <span class="menu-title">CÔNG CỤ DỤNG CỤ</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m10">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Khai báo CCDC đầu kỳ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Mua và ghi tăng CCDC</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Ghi tăng CCDC khác</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Phân bổ CCDC</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Kiểm kê CCDC</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Ghi giảm CCDC</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Điều chỉnh CCDC</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Điều chuyển CCDC</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-m11" aria-expanded="false" aria-controls="ui-m11">
+                            <img src="images/s11.png">
+                            <span class="menu-title">TÀI SẢN CỐ ĐỊNH</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-m11">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Khai báo TSCD đầu kỳ</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Mua và ghi tăng TSCD</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Ghi tăng TSCD khác</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Tính khấu hao TSCD</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Kiểm kê TSCD</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Ghi giảm TSDC</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Điều chỉnh TSCD</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Điều chuyển TSCD</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#maps" aria-expanded="false" aria-controls="maps">
+                            <img src="images/s12.png">
+                            <span class="menu-title">LƯƠNG</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="maps">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Chấm công</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Tổng hợp chấm công</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">bảng lương</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Hạch toán chi phí lương</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Nộp bảo hiểm</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Thanh toán lương</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                            <img src="images/s13.png">
+                            <span class="menu-title">HỢP ĐỒNG</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="auth">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#"> Hợp đồng mua </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#"> Hợp đồng bán </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="menu-tool-bar">
+                                <div class="ptitle">
+                                    <span>PHIẾU THU</span>
+                                </div>
+
+                                <div class="gr-toolbar">
+                                    <a href="#"><i class="mdi mdi-plus"></i> Thêm</a>
+                                    <a href="#"><i class="mdi mdi-delete"></i> Xóa</a>
+                                    <a href="#"><i class="mdi mdi-grease-pencil"></i> Ghi sổ</a>
+                                    <a href="#"><i class="mdi mdi-file-export"></i> Kết xuất</a>
+                                    <a href="#"><i class="mdi mdi-chevron-down"></i> Ẩn tìm kiếm</a>
+                                </div>
+                            </div>
+
+                            <div class="frm-main">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="form-group row">
+                                                <label class="col-sm-5 col-form-label">Loại chứng từ</label>
+                                                <div class="col-sm-7 pd-l-0">
+                                                    <select name="" id="" class="form-control form-control-sm">
+                                                        <option value="1"></option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-5 col-form-label">Trạng thái</label>
+                                                <div class="col-sm-7 pd-l-0">
+                                                    <select name="" id="" class="form-control form-control-sm">
+                                                        <option value="1"></option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group row">
+                                                <label class="col-sm-5 col-form-label text-right">Loại tiền</label>
+                                                <div class="col-sm-7">
+                                                    <select name="" id="" class="form-control form-control-sm">
+                                                        <option value="1"></option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-5 col-form-label text-right">Đối tượng</label>
+                                                <div class="col-sm-7">
+                                                    <select name="" id="" class="form-control form-control-sm">
+                                                        <option value="1"></option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label text-right">Từ ngày</label>
+                                                <div class="col-sm-4">
+                                                    <input type="date" class="form-control form-control-sm">
+                                                </div>
+                                                <label class="col-sm-2 col-form-label text-right">Đến ngày</label>
+                                                <div class="col-sm-4">
+                                                    <input type="date" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label text-right">Tìm kiếm</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="frm-button">
+                                                <button class="btn btn-success btn-sm">Tìm kiếm</button>
+                                                <button class="btn btn-danger btn-sm">Đặt lại</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="frm-card-table pt-3 jsgrid" style="width: 100%;">
+                                    <div class="jsgrid-grid-header jsgrid-header-scrollbar">
+                                        <table class="jsgrid-table">
+                                            <tr class="jsgrid-header-row">
+                                                <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 150px;">Ngày chứng từ</th>
+                                                <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 150px;">Ngày hạch toán</th>
+                                                <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 150px;">Số chứng từ</th>
+                                                <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 150px;">Loại chứng từ</th>
+                                                <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 180px;">Đối tượng kế toán</th>
+                                                <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 160px;">Người nộp tiền</th>
+                                                <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 150px;">Lý do thu</th>
+                                                <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 180px;">Tổng tiền thanh toán</th>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="jsgrid-grid-body" style="height: 350px;">
+                                        <table class="jsgrid-table">
+                                            <tbody>
+                                                <tr class="jsgrid-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;Demo</td>
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;Demo</td>
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;Demo</td>
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;Demo</td>
+                                                    <td class="jsgrid-cell" style="width: 180px;">&nbsp;Demo</td>
+                                                    <td class="jsgrid-cell" style="width: 160px;">&nbsp;Demo</td>
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;Demo</td>
+                                                    <td class="jsgrid-cell" style="width: 180px;">Demo</td>
+                                                </tr>
+                                                <tr class="jsgrid-alt-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-alt-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-alt-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-alt-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-alt-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-alt-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-alt-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-alt-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-alt-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                                <tr class="jsgrid-alt-row">
+                                                    <td class="jsgrid-cell" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 160px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 150px;">&nbsp;</td>
+                                                    <td class="jsgrid-cell jsgrid-align-right" style="width: 180px;">&nbsp;</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <nav aria-label="Page navigation" class="phantrang">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">«</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">»</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+                <!--
+                <footer class="footer">
+                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2019 <a href="#" target="_blank">Softdreams</a>. All rights reserved.</span>
+                    </div>
+                </footer>
+-->
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+    <!-- base:js -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+    <!-- endinject -->
+
+    <script src="vendors/jsgrid.min.js"></script>
+    <script src="vendors/js-grid.js"></script>
+
+    <script src="vendors/db.js"></script>
+
+    <!-- plugin js for this page -->
+    <!--    <script src="vendors/chart.js/Chart.min.js"></script>-->
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page-->
+    <!--    <script src="js/dashboard.js"></script>-->
+    <!-- End custom js for this page-->
+</body></html>
+
